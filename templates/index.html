@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Story Title</th>
+        <th>User Story</th>
+        <th>Acceptance Criteria</th>
+        <th>Business Value</th>
+        <th>Esitmation</th>
+        <th>Status</th>
+    </tr>
+    {% for item in user_story %}
+    <tr>
+        {% for elem in item %}
+        <td>{{ elem }}</td>
+        {% endfor %}
+    </tr>
+    {% endfor %}
+
+
+</table>
+
+</body>
+</html>
